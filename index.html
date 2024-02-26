@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Project 1 Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('form-back.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.inline-block-child {
+  display: inline-block;
+  padding: 0px;
+}
+.container {
+  height: 100%;
+  overflow-y: auto;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+      <div class="w3-display-middle">
+        <h3>Please fill out this student survey:</h3>
+        
+        <div class="container">
+        <form>
+            <div class='parent'>
+                <div class='child inline-block-child'>
+                    <label for="fname">First name:</label><br>
+                    <input required type="text" id="fname" name="fname"><br>    
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="lname">Last name:</label><br>
+                    <input required type="text" id="lname" name="lname"><br>
+                </div>
+            </div><br>
+
+            <div class='parent'>
+                <div class='child inline-block-child'>
+                    <label for="address">Street Address:</label><br>
+                    <input required type="text" id="address" name="address"><br>   
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="city">City:</label><br>
+                    <input required type="text" id="city" name="city"><br>
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="state">State:</label><br>
+                    <input required type="text" id="state" name="state"><br>
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="zip">Zip Code:</label><br>
+                     <input required type="text" id="zip" name="zip"><br>
+                </div>
+            </div><br>
+
+            <div class='parent'>
+                <div class='child inline-block-child'>
+                    <label for="number">Telephone Number:</label><br>
+                  <input required type="text" id="number" name="number"><br>
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="email">Email:</label><br>
+                 <input required type="text" id="email" name="email"><br>
+                </div>
+                <div class='child inline-block-child'>
+                    <label for="date">Today's Date (mm/dd/yyyy):</label><br>
+                    <input required type="text" id="date" name="date"><br>
+                </div>
+            </div>
+
+            <p>What do you like most about campus?</p>
+            <input class="w3-check" type="checkbox">
+            <label>Students</label>
+
+            <input class="w3-check" type="checkbox">
+            <label>Location</label>
+
+            <input class="w3-check" type="checkbox">
+            <label>Campus</label>
+
+            <input class="w3-check" type="checkbox">
+            <label>atmosphere</label>
+
+            <input class="w3-check" type="checkbox">
+            <label>Dorm Rooms</label>
+
+            <input class="w3-check" type="checkbox">
+            <label>Sports</label>
+            <br><br>
+
+            <p>How did you become interested in this university?</p>
+            <input class="w3-radio" type="radio">
+            <label>Friends</label>
+
+            <input class="w3-radio" type="radio">
+            <label>Television</label>
+
+            <input class="w3-radio" type="radio">
+            <label>Internet</label>
+            
+            <input class="w3-radio" type="radio">
+            <label>Other</label><br><br>
+
+            <select class="w3-select" name="option"> 
+                <option value="" disabled selected> 
+                  How likely are you to recommend this school to prospective students?
+               </option> 
+                <option value="1">Very Likely</option> 
+                <option value="2">Likely</option> 
+                <option value="3">Unlikely</option> 
+            </select> 
+
+            <p><label for="raffle">Enter at least 10 comma separated numbers between 1 through 100 (this is for a Raffle!):</label></p>
+
+            <textarea id="raffle" placeholder="Enter your 10 minimum values here..." name="raffle" rows="4" cols="50"></textarea>
+
+            <p><label for="comments">Additional Comments (Optional):</label></p>
+
+            <textarea id="comments" placeholder="Please let us know if you have any additional comments here..." name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <button class="w3-button w3-white w3-border">Cancel</button>
+            <button class="w3-button w3-green">Submit</button>
+        </form>
+    </div>
+      </div>
+    </div>
+    </div>
+    </body>
+</html>
+
