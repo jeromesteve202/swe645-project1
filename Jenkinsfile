@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_REGISTRY = 'docker.io'
-        DOCKERHUB_CREDENTIALS_ID = 'DOCKERHUB_CREDENTIALS_ID' 
+        DOCKERHUB_CREDENTIALS_ID = '6ac063cd-f3fe-4461-93f1-ddcb7e31c487' 
         IMAGE_NAME = 'jsahayad/swe645project2'
     }
     stages {
