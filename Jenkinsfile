@@ -24,5 +24,13 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Rancher') {
+            steps {
+                script {
+                    // Assuming you have kubectl and necessary access configured in your Jenkins environment
+                   sh 'kubectl rollout restart deployment swe645project2'
+                }
+            }
+        }
     }
 }
