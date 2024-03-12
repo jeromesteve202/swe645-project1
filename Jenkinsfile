@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'docker build -t $IMAGE_NAME:latest .'
+                    sh '/usr/bin/docker build -t jsahayad/swe645project2:latest .'
                 }
             }
         }
